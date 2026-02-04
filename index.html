@@ -55,7 +55,7 @@
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" type="button" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <button class="nav-toggle" type="button" id="navToggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
           <div class="nav-lines"></div>
         </button>
 
@@ -400,6 +400,42 @@
 
   </main>
 
-  <script src="script.js" defer></script>
+  <script>
+    // Toggle Menu Function
+    function toggleMobileMenu() {
+      const menu = document.getElementById('navMenu');
+      const btn = document.getElementById('navToggle');
+      
+      // Toggle class
+      menu.classList.toggle('is-open');
+      
+      // Update ARIA
+      const isOpen = menu.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', isOpen);
+    }
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const menu = document.getElementById('navMenu');
+        const btn = document.getElementById('navToggle');
+        menu.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Back to Top Logic
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    // Dynamic Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
