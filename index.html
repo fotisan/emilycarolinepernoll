@@ -3,79 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
 
+  <!-- SEO (quiet places) -->
   <title>Marriage & Family Therapist in Santa Monica, CA | Emily Caroline Pernoll, MA, LMFT</title>
-  <meta name="description" content="Emily Caroline Pernoll is a Marriage & Family Therapist (MA, LMFT) in Santa Monica, CA. In-person and online therapy for individuals, couples, and families. Free 15-minute consultation." />
+  <meta name="description" content="Integrative therapy for individuals, couples, and families in Santa Monica, CA. In-person and online sessions. Free 15-minute consultation." />
   <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#0B1020" />
+  <link rel="canonical" href="https://example.com/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Emily Caroline Pernoll, MA, LMFT | Santa Monica Therapy" />
-  <meta property="og:description" content="In-person and online therapy for individuals, couples, and families. Book a free 15-minute consultation." />
+  <!-- Social -->
+  <meta property="og:title" content="Emily Caroline Pernoll, MA, LMFT — Therapy in Santa Monica, CA" />
+  <meta property="og:description" content="A calm, collaborative space for individuals, couples, and families. In-person & online. Free 15-minute consultation." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og.jpg" />
   <meta property="og:locale" content="en_US" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Lightweight favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%230b1220' d='M0 0h64v64H0z'/%3E%3Cpath fill='%23cfe8ff' d='M18 44c6.5-14.3 10.4-21 14-21s7.5 6.7 14 21h-6.4c-4-9-6.4-13.8-7.6-13.8S30.4 35 26.4 44H18z'/%3E%3C/svg%3E" />
 
-  <!-- Favicon (replace with your actual files) -->
-  <link rel="icon" href="assets/favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-
-  <link rel="preload" href="assets/hero.webp" as="image" imagesrcset="assets/hero.webp" />
+  <link rel="preload" href="emily-hero.webp" as="image" imagesrcset="emily-hero.webp 1x" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- JSON-LD: LocalBusiness + Person (update url/logo if needed) -->
+  <!-- Schema (Local SEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "name": "Emily Caroline Pernoll",
-        "honorificSuffix": "MA, LMFT",
-        "jobTitle": "Marriage & Family Therapist",
-        "telephone": "+1-310-254-2304",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "270 26th Street, Suite 204",
-          "addressLocality": "Santa Monica",
-          "addressRegion": "CA",
-          "postalCode": "90402",
-          "addressCountry": "US"
-        },
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Pacifica Graduate Institute"
-        }
-      },
-      {
-        "@type": "LocalBusiness",
-        "name": "Emily Caroline Pernoll Therapy",
-        "description": "In-person and online therapy for individuals, couples, and families in Santa Monica, CA.",
-        "telephone": "+1-310-254-2304",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "270 26th Street, Suite 204",
-          "addressLocality": "Santa Monica",
-          "addressRegion": "CA",
-          "postalCode": "90402",
-          "addressCountry": "US"
-        },
-        "areaServed": [
-          { "@type": "City", "name": "Santa Monica" },
-          { "@type": "City", "name": "Los Angeles" },
-          { "@type": "City", "name": "Venice" },
-          { "@type": "AdministrativeArea", "name": "Los Angeles County" }
-        ],
-        "makesOffer": [
-          { "@type": "Offer", "name": "Individual Session", "price": "250", "priceCurrency": "USD" },
-          { "@type": "Offer", "name": "Couple Session", "price": "325", "priceCurrency": "USD" }
-        ]
-      }
-    ]
+    "@type": "LocalBusiness",
+    "name": "Emily Caroline Pernoll, MA, LMFT",
+    "description": "Marriage & Family Therapist offering integrative therapy for individuals, couples, and families in Santa Monica, CA.",
+    "image": "https://example.com/emily-portrait.webp",
+    "telephone": "+1-310-254-2304",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "270 26th Street, Suite 204",
+      "addressLocality": "Santa Monica",
+      "addressRegion": "CA",
+      "postalCode": "90402",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Santa Monica, CA", "Los Angeles, CA", "Venice, CA", "Brentwood, CA", "Bel Air, CA"],
+    "url": "https://example.com/",
+    "sameAs": [],
+    "openingHoursSpecification": []
   }
   </script>
 </head>
@@ -83,501 +52,491 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav">
-    <div class="container nav__inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">
-          <span class="brand__name">Emily Caroline Pernoll</span>
-          <span class="brand__meta">MA, LMFT · Santa Monica</span>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Emily Caroline Pernoll home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Emily Caroline Pernoll</span>
+          <span class="brand-sub">MA, LMFT</span>
         </span>
       </a>
 
-      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
-        <span class="sr-only">Open menu</span>
-        <span class="nav__toggleLines" aria-hidden="true"></span>
-      </button>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-lines" aria-hidden="true"></span>
+        </button>
 
-      <nav id="navMenu" class="nav__menu" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#approach">Approach</a>
-        <a href="#fees">Fees</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn--small">Free consult</a>
+        <div class="nav-menu" id="navMenu" data-nav-menu>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#approach">Approach</a>
+          <a class="nav-link" href="#fees">Fees</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#contact">Contact</a>
+
+          <div class="nav-cta">
+            <a class="btn btn-ghost" href="tel:+13102542304">Call (310) 254-2304</a>
+            <a class="btn btn-primary" href="#contact">Free 15-min consult</a>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <!-- HERO -->
-    <section id="top" class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="micro">Therapy in Santa Monica, CA · In-person and online</p>
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <!-- Micro line (quiet SEO) -->
+          <p class="micro">Marriage & Family Therapy · Santa Monica, CA 90402 · In-person & Online</p>
 
-          <h1>
-            A steadier nervous system.
-            A clearer relationship with yourself.
+          <h1 class="h1">
+            A steadier way forward
+            <span class="h1-soft">for you and your relationships.</span>
           </h1>
 
-          <p class="lead">
-            If anxiety, overwhelm, grief, or relationship strain keeps looping in the background, you do not need to solve it alone.
-            We start where you are, and build practical, lasting change that feels grounded in your real life.
+          <p class="subhead">
+            If you’re feeling anxious, emotionally flooded, disconnected, or stuck in patterns that won’t shift,
+            you don’t need to have it all figured out to begin. We’ll slow things down, notice what’s really happening,
+            and build practical steps that fit real life.
           </p>
 
-          <div class="hero__cta">
-            <a class="btn" href="#contact">Book a free 15-minute consultation</a>
-            <a class="btn btn--ghost" href="tel:+13102542304">Call (310) 254-2304</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Request a free 15-minute consultation</a>
+            <a class="btn btn-ghost" href="#services">Explore services</a>
           </div>
 
-          <div class="hero__facts" role="list">
-            <div class="fact" role="listitem">
-              <span class="fact__k">Clients</span>
-              <span class="fact__v">Individuals · Couples · Families</span>
+          <div class="hero-trust">
+            <div class="trust-pill">
+              <span class="trust-dot" aria-hidden="true"></span>
+              <span>Verified LMFT · California License</span>
             </div>
-            <div class="fact" role="listitem">
-              <span class="fact__k">Focus</span>
-              <span class="fact__v">Addiction · Infidelity · Grief</span>
+            <div class="trust-pill">
+              <span class="trust-dot" aria-hidden="true"></span>
+              <span>Santa Monica office · 270 26th St, Suite 204</span>
             </div>
-            <div class="fact" role="listitem">
-              <span class="fact__k">Format</span>
-              <span class="fact__v">Online and in-person</span>
+            <div class="trust-pill">
+              <span class="trust-dot" aria-hidden="true"></span>
+              <span>Individuals · Couples · Families</span>
             </div>
           </div>
-
-          <p class="note">
-            Licensed in California (LMFT #97635). Verified listing on Psychology Today.
-          </p>
         </div>
 
-        <div class="hero__media" aria-label="Therapy portrait">
-          <!-- Replace assets/hero.webp with your chosen image -->
-          <img
-            src="assets/hero.webp"
-            width="720"
-            height="900"
-            alt="Portrait photo"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-          />
-          <div class="hero__card" aria-hidden="true">
-            <div class="hero__cardTitle">What you can expect</div>
-            <div class="hero__cardText">
-              Collaborative sessions, mind body awareness, skills you can use between appointments.
+        <div class="hero-media">
+          <div class="media-card">
+            <img
+              src="emily-hero.webp"
+              alt="Therapy office atmosphere in Santa Monica"
+              width="1200"
+              height="1400"
+              loading="eager"
+              decoding="async"
+              class="hero-img"
+            />
+            <div class="media-overlay" aria-hidden="true"></div>
+          </div>
+
+          <div class="glance" aria-label="Practice at a glance">
+            <div class="glance-item">
+              <span class="glance-k">Availability</span>
+              <span class="glance-v">In-person & Online</span>
+            </div>
+            <div class="glance-item">
+              <span class="glance-k">Location</span>
+              <span class="glance-v">Santa Monica, CA 90402</span>
+            </div>
+            <div class="glance-item">
+              <span class="glance-k">Consult</span>
+              <span class="glance-v">Free 15 minutes</span>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- TRUST STRIP -->
-    <section class="strip">
-      <div class="container strip__inner">
-        <div class="strip__item">
-          <span class="strip__title">Free 15-minute consult</span>
-          <span class="strip__text">A calm first step, no pressure</span>
+    <!-- SOCIAL PROOF / CLARITY STRIP -->
+    <section class="strip" aria-label="Clarity strip">
+      <div class="container strip-inner">
+        <p class="strip-title">What we can work on</p>
+        <div class="strip-chips" role="list">
+          <span class="chip" role="listitem">Addiction & relapse cycles</span>
+          <span class="chip" role="listitem">Infidelity & trust repair</span>
+          <span class="chip" role="listitem">Grief & loss</span>
+          <span class="chip" role="listitem">Anxiety & overwhelm</span>
+          <span class="chip" role="listitem">Relationship conflict</span>
+          <span class="chip" role="listitem">Life transitions</span>
         </div>
-        <div class="strip__item">
-          <span class="strip__title">Santa Monica office</span>
-          <span class="strip__text">270 26th Street, Suite 204</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-label="About Emily">
+      <div class="container two-col">
+        <div>
+          <h2 class="h2">A calm space that’s also practical.</h2>
+          <p class="p">
+            Many people arrive feeling on edge, burned out, or disconnected from themselves or others.
+            Sometimes it’s a clear event. Often it’s the accumulation. My job is to help you notice the “blind spots”
+            that keep repeating, and to support real change that holds up outside the therapy room.
+          </p>
+          <p class="p">
+            My style is engaged, collaborative, and integrative. We can include somatic awareness, relational patterns,
+            cognitive tools, and skill-building. Mindfulness and mind-body practices can help you understand both current
+            stress and the older stories your nervous system still carries.
+          </p>
+
+          <div class="about-cards" role="list">
+            <div class="mini-card" role="listitem">
+              <p class="mini-k">Clients</p>
+              <p class="mini-v">Individuals, Couples, Families</p>
+            </div>
+            <div class="mini-card" role="listitem">
+              <p class="mini-k">Approaches</p>
+              <p class="mini-v">Integrative, Trauma-informed, Relational</p>
+            </div>
+            <div class="mini-card" role="listitem">
+              <p class="mini-k">Office</p>
+              <p class="mini-v">Santa Monica · near LA & Venice</p>
+            </div>
+          </div>
         </div>
-        <div class="strip__item">
-          <span class="strip__title">Online sessions</span>
-          <span class="strip__text">Convenient and secure</span>
-        </div>
+
+        <aside class="profile" aria-label="Profile card">
+          <div class="profile-card">
+            <img
+              src="emily-portrait.webp"
+              alt="Portrait of therapist Emily Caroline Pernoll"
+              width="900"
+              height="900"
+              loading="lazy"
+              decoding="async"
+              class="profile-img"
+            />
+            <div class="profile-body">
+              <p class="profile-name">Emily Caroline Pernoll</p>
+              <p class="profile-cred">MA, LMFT</p>
+
+              <div class="profile-actions">
+                <a class="btn btn-primary btn-full" href="#contact">Book a consult</a>
+                <a class="btn btn-ghost btn-full" href="tel:+13102542304">Call (310) 254-2304</a>
+              </div>
+
+              <div class="profile-meta">
+                <p><span class="muted">Address:</span> 270 26th Street, Suite 204, Santa Monica, CA 90402</p>
+                <p><span class="muted">Format:</span> In-person & Online</p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="section">
+    <section class="section" id="services" aria-label="Services">
       <div class="container">
-        <header class="section__head">
-          <h2>Ways we can work together</h2>
-          <p class="section__sub">
-            Clear structure, warm presence, and practical progress.
+        <div class="section-head">
+          <h2 class="h2">Services</h2>
+          <p class="lead">
+            Choose a starting point. We can adjust as we learn what helps you most.
           </p>
-        </header>
+        </div>
 
         <div class="cards">
           <article class="card">
-            <h3>Individual therapy</h3>
-            <p>
-              For anxiety, stress, life transitions, trauma patterns, and the feeling that your mind never fully turns off.
-              We slow things down, notice what your system is protecting, and rebuild steadiness.
+            <h3 class="h3">Individual therapy</h3>
+            <p class="p">
+              For anxiety, overwhelm, depression, self-esteem, trauma responses, and patterns that feel hard to break.
+              We work with both insight and skills so you can feel steadier day-to-day.
             </p>
-            <div class="chips" aria-label="Common themes">
-              <span class="chip">Anxiety</span>
-              <span class="chip">Depression</span>
-              <span class="chip">Trauma</span>
-              <span class="chip">Self-esteem</span>
-            </div>
+            <p class="meta">Typical focus: anxiety, trauma, addiction patterns, life transitions</p>
           </article>
 
           <article class="card">
-            <h3>Couples therapy</h3>
-            <p>
-              When conflict, distance, or trust fractures take over the relationship, we map what is happening underneath and
-              create new ways to communicate, repair, and reconnect.
+            <h3 class="h3">Couples therapy</h3>
+            <p class="p">
+              For communication breakdown, conflict loops, emotional disconnection, and rebuilding after a rupture.
+              We slow the cycle, strengthen repair, and create a clearer path forward.
             </p>
-            <div class="chips">
-              <span class="chip">Infidelity</span>
-              <span class="chip">Communication</span>
-              <span class="chip">Repair</span>
-              <span class="chip">Attachment</span>
-            </div>
+            <p class="meta">Typical focus: infidelity, trust repair, intimacy, premarital support</p>
           </article>
 
           <article class="card">
-            <h3>Family therapy</h3>
-            <p>
-              For families navigating change, high emotion, or repeated cycles. We build clarity, boundaries, and healthier ways
-              to stay connected without losing yourselves.
+            <h3 class="h3">Family therapy</h3>
+            <p class="p">
+              For family conflict, parenting stress, teen concerns, and shared transitions.
+              The goal is safer dynamics, better boundaries, and more workable patterns at home.
             </p>
-            <div class="chips">
-              <span class="chip">Family conflict</span>
-              <span class="chip">Parenting</span>
-              <span class="chip">Teens</span>
-              <span class="chip">Transitions</span>
-            </div>
+            <p class="meta">Typical focus: parenting, conflict, transitions, teen support</p>
           </article>
+
+          <article class="card card-highlight">
+            <h3 class="h3">Grief & loss recovery group</h3>
+            <p class="p">
+              A warm, supportive space to process loss, make meaning, and feel less alone in what you carry.
+              You can come exactly as you are. No pressure to “be okay.”
+            </p>
+            <p class="meta">Group sessions: $70–$80 · Santa Monica</p>
+          </article>
+        </div>
+
+        <div class="section-cta">
+          <div class="cta-box">
+            <p class="cta-title">Not sure what fits?</p>
+            <p class="cta-text">A free 15-minute call can help you choose a clear first step.</p>
+            <a class="btn btn-primary" href="#contact">Request consultation</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- APPROACH -->
-    <section id="approach" class="section section--alt">
+    <section class="section" id="approach" aria-label="Approach">
       <div class="container">
-        <header class="section__head">
-          <h2>An integrative, modern approach</h2>
-          <p class="section__sub">
-            We work with thoughts, emotions, the body, and your relationships, because real change rarely lives in just one place.
+        <div class="section-head">
+          <h2 class="h2">Approach</h2>
+          <p class="lead">
+            Integrative therapy that respects your story and gives you tools you can actually use.
           </p>
-        </header>
+        </div>
 
-        <div class="grid2">
-          <div class="panel">
-            <h3>How sessions feel</h3>
-            <p>
-              Engaged and collaborative. We look for the blind spots that keep shaping your reactions, your choices, and your relationships.
-              You do not need to arrive with a perfect story. We build the map together.
-            </p>
-
-            <div class="list">
-              <div class="list__row">
-                <span class="list__k">Mindfulness and body awareness</span>
-                <span class="list__v">for regulation and insight</span>
-              </div>
-              <div class="list__row">
-                <span class="list__k">Relational patterns</span>
-                <span class="list__v">to change what repeats</span>
-              </div>
-              <div class="list__row">
-                <span class="list__k">Skills between sessions</span>
-                <span class="list__v">so progress sticks</span>
-              </div>
-            </div>
+        <div class="grid-3">
+          <div class="feature">
+            <p class="feature-title">Somatic awareness</p>
+            <p class="p">We pay attention to the body’s signals so you can calm reactivity and feel more grounded.</p>
           </div>
-
-          <div class="panel">
-            <h3>Therapy modalities</h3>
-            <p class="muted">
-              Modalities are tools. We use what fits you, not what looks good on a list.
-            </p>
-            <div class="chips chips--wrap">
-              <span class="chip">CBT</span>
-              <span class="chip">Psychodynamic</span>
-              <span class="chip">Trauma-focused</span>
-              <span class="chip">Humanistic</span>
-              <span class="chip">Gestalt</span>
-              <span class="chip">Jungian</span>
-            </div>
-
-            <div class="callout">
-              <strong>Goal:</strong> help you live a more authentic, wholehearted, courageous life that feels true to you.
-            </div>
+          <div class="feature">
+            <p class="feature-title">Relational patterns</p>
+            <p class="p">We map the cycle between you and others, then practice repair and new ways to connect.</p>
+          </div>
+          <div class="feature">
+            <p class="feature-title">Skills + insight</p>
+            <p class="p">You’ll build practical skills while also understanding the “why” behind what keeps repeating.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- FOCUS AREAS -->
-    <section class="section">
-      <div class="container">
-        <header class="section__head">
-          <h2>Areas of focus</h2>
-          <p class="section__sub">
-            If you are not sure where you fit, that is normal. Your first step is simply reaching out.
+        <div class="quiet">
+          <p class="quiet-title">Modalities (for clarity)</p>
+          <p class="p">
+            Cognitive Behavioral (CBT), Gestalt, Humanistic, Jungian, Psychodynamic, Trauma-focused — used selectively
+            and tailored to your needs.
           </p>
-        </header>
-
-        <div class="pillGrid" aria-label="Focus areas">
-          <span class="pill">Addiction and substance use</span>
-          <span class="pill">Grief and loss</span>
-          <span class="pill">Infidelity and betrayal</span>
-          <span class="pill">Anxiety and chronic stress</span>
-          <span class="pill">Depression and low motivation</span>
-          <span class="pill">Codependency</span>
-          <span class="pill">Trauma and PTSD</span>
-          <span class="pill">Life transitions</span>
-          <span class="pill">Relationship issues</span>
-          <span class="pill">Anger and impulse control</span>
-          <span class="pill">Women’s issues</span>
-          <span class="pill">LGBTQ+ affirming care</span>
-          <span class="pill">Prenatal and postpartum</span>
-          <span class="pill">Eating disorders</span>
-          <span class="pill">Family conflict</span>
         </div>
       </div>
     </section>
 
     <!-- FEES -->
-    <section id="fees" class="section section--alt">
+    <section class="section" id="fees" aria-label="Fees and insurance">
       <div class="container">
-        <header class="section__head">
-          <h2>Fees and payment</h2>
-          <p class="section__sub">
-            Transparent, simple, and respectful of your time.
-          </p>
-        </header>
+        <div class="section-head">
+          <h2 class="h2">Fees</h2>
+          <p class="lead">Transparent pricing, so you know what to expect.</p>
+        </div>
 
-        <div class="pricing">
-          <div class="priceCard">
-            <h3>Individual session</h3>
-            <p class="price">$250</p>
-            <p class="muted">Per 60-minute session</p>
+        <div class="fees">
+          <div class="fee-card">
+            <p class="fee-k">Individual sessions</p>
+            <p class="fee-v">$250</p>
+            <p class="fee-note">Per session</p>
           </div>
 
-          <div class="priceCard">
-            <h3>Couples session</h3>
-            <p class="price">$325</p>
-            <p class="muted">Per session</p>
+          <div class="fee-card">
+            <p class="fee-k">Couple sessions</p>
+            <p class="fee-v">$325</p>
+            <p class="fee-note">Per session</p>
           </div>
 
-          <div class="priceCard">
-            <h3>Sliding scale</h3>
-            <p class="price">Available</p>
-            <p class="muted">Ask if you may be eligible</p>
+          <div class="fee-card">
+            <p class="fee-k">Sliding scale</p>
+            <p class="fee-v">Available</p>
+            <p class="fee-note">Ask if you may be eligible</p>
           </div>
         </div>
 
-        <div class="noteBox">
-          <p><strong>Payment methods:</strong> American Express, Visa, Mastercard, cash, check.</p>
-          <p><strong>Insurance:</strong> Out of network. If you have coverage, ask about reimbursement options.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- GROUP -->
-    <section class="section">
-      <div class="container">
-        <header class="section__head">
-          <h2>Group: Grief and Loss Recovery</h2>
-          <p class="section__sub">
-            A supportive space to process loss, feel less alone, and move through grief with care.
+        <div class="quiet">
+          <p class="quiet-title">Payment + insurance</p>
+          <p class="p">
+            Payment methods can include major credit cards and other standard options. If you have out-of-network benefits,
+            you can ask about documentation for reimbursement.
           </p>
-        </header>
-
-        <div class="group">
-          <div class="group__card">
-            <h3>What this group offers</h3>
-            <p>
-              A warm, steady environment where grief is allowed to be real.
-              You can share, listen, and slowly rebuild connection at your own pace.
-            </p>
-            <div class="chips">
-              <span class="chip">Grief</span>
-              <span class="chip">Support</span>
-              <span class="chip">Connection</span>
-            </div>
-          </div>
-
-          <div class="group__card">
-            <h3>Details</h3>
-            <div class="list">
-              <div class="list__row">
-                <span class="list__k">Cost</span>
-                <span class="list__v">$70–$80 per session</span>
-              </div>
-              <div class="list__row">
-                <span class="list__k">Location</span>
-                <span class="list__v">Santa Monica, CA 90402</span>
-              </div>
-              <div class="list__row">
-                <span class="list__k">Hosted by</span>
-                <span class="list__v">Emily Caroline Pernoll</span>
-              </div>
-            </div>
-
-            <a class="btn btn--ghost btn--full" href="#contact">Ask about the group</a>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- CREDENTIALS -->
-    <section class="section section--alt">
+    <!-- LOCATION / MAP -->
+    <section class="section" id="location" aria-label="Location">
       <div class="container">
-        <header class="section__head">
-          <h2>Credentials</h2>
-          <p class="section__sub">
-            Experience matters, but so does fit. You are welcome to ask anything.
-          </p>
-        </header>
+        <div class="section-head">
+          <h2 class="h2">Santa Monica office</h2>
+          <p class="lead">270 26th Street, Suite 204 · Santa Monica, CA 90402</p>
+        </div>
 
-        <div class="cards cards--tight">
-          <article class="card">
-            <h3>Licensed in California</h3>
-            <p>LMFT #97635</p>
-          </article>
-          <article class="card">
-            <h3>Graduate education</h3>
-            <p>Pacifica Graduate Institute, graduated 2011</p>
-          </article>
-          <article class="card">
-            <h3>Practice style</h3>
-            <p>Integrative, collaborative, and body aware</p>
-          </article>
+        <div class="map-wrap">
+          <iframe
+            title="Map: 270 26th Street, Suite 204, Santa Monica, CA 90402"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=270%2026th%20Street%20Suite%20204%20Santa%20Monica%20CA%2090402&output=embed">
+          </iframe>
+        </div>
+
+        <div class="nearby">
+          <p class="nearby-title">Nearby areas</p>
+          <p class="p">Los Angeles · Venice · Brentwood · Bel Air · Zip codes: 90402, 90291, 90049</p>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="section">
+    <section class="section" id="faq" aria-label="FAQ">
       <div class="container">
-        <header class="section__head">
-          <h2>FAQ</h2>
-          <p class="section__sub">
-            Short answers, so the first step feels easier.
-          </p>
-        </header>
+        <div class="section-head">
+          <h2 class="h2">FAQ</h2>
+          <p class="lead">Short answers, so the first step feels simpler.</p>
+        </div>
 
         <div class="faq" data-accordion>
-          <details class="faq__item">
-            <summary>Do I need to know what I want to work on before we start?</summary>
-            <p>
-              No. Many people arrive with a feeling rather than a clear topic.
-              In our first conversation, we clarify what is happening and what would actually help.
-            </p>
+          <details class="faq-item">
+            <summary>
+              <span>What happens in the free 15-minute consultation?</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              We’ll briefly discuss what’s bringing you in, what you’re hoping for, and whether I’m the right fit.
+              You can ask practical questions about format, scheduling, and next steps.
+            </div>
           </details>
 
-          <details class="faq__item">
-            <summary>How long are sessions?</summary>
-            <p>Individual sessions are typically 60 minutes.</p>
+          <details class="faq-item">
+            <summary>
+              <span>Do you offer in-person and online therapy?</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              Yes. Sessions are available both in-person in Santa Monica and online, depending on your needs and preferences.
+            </div>
           </details>
 
-          <details class="faq__item">
-            <summary>Do you offer online therapy?</summary>
-            <p>
-              Yes. Sessions are available both in person in Santa Monica and online.
-              We choose the format that best supports your consistency.
-            </p>
+          <details class="faq-item">
+            <summary>
+              <span>How long is a typical session?</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              Most sessions are scheduled in a standard therapy length. If you need a different format, we can discuss options.
+            </div>
           </details>
 
-          <details class="faq__item">
-            <summary>Do you take insurance?</summary>
-            <p>
-              I am out of network. If you have out of network benefits, you may be eligible for reimbursement.
-              You can ask during the consultation and we will walk through options.
-            </p>
+          <details class="faq-item">
+            <summary>
+              <span>What issues do you commonly help with?</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              Common areas include anxiety, grief, addiction patterns, relationship conflict, infidelity recovery, trauma responses,
+              and life transitions. If you’re unsure, start with the consult.
+            </div>
           </details>
 
-          <details class="faq__item">
-            <summary>What is the free 15-minute consultation?</summary>
-            <p>
-              A brief call to see if we are a good fit, clarify what you are looking for, and decide next steps.
-              No pressure and no expectation.
-            </p>
+          <details class="faq-item">
+            <summary>
+              <span>Do you work with couples and families?</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              Yes. I see individuals, couples, and families. We’ll choose an approach that matches your goals and the dynamics involved.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Do you accept insurance?</span>
+              <span class="chev" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-body">
+              If you have out-of-network benefits, you may be able to seek reimbursement. You’re welcome to ask what documentation you’d need.
+            </div>
           </details>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section--alt">
-      <div class="container">
-        <header class="section__head">
-          <h2>Let’s connect</h2>
-          <p class="section__sub">
-            If you are ready, send a short note. If you are not ready, you can still reach out. Either way, we take it one step at a time.
+    <section class="section section-dark" id="contact" aria-label="Contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <h2 class="h2 h2-invert">Let’s connect.</h2>
+          <p class="lead lead-invert">
+            Reaching out can feel like a lot, especially when you’re already carrying too much.
+            A short call is enough to start.
           </p>
-        </header>
 
-        <div class="contact">
-          <div class="contact__card">
-            <h3>Contact</h3>
-
-            <div class="contact__rows">
-              <a class="contact__row" href="tel:+13102542304">
-                <span class="contact__k">Phone</span>
-                <span class="contact__v">(310) 254-2304</span>
-              </a>
-
-              <!-- Put real email if you have it -->
-              <a class="contact__row" href="mailto:hello@example.com">
-                <span class="contact__k">Email</span>
-                <span class="contact__v">hello@example.com</span>
-              </a>
-
-              <div class="contact__row">
-                <span class="contact__k">Office</span>
-                <span class="contact__v">270 26th Street, Suite 204, Santa Monica, CA 90402</span>
-              </div>
-
-              <a class="contact__row" target="_blank" rel="noopener" href="https://www.google.com/maps?q=270%2026th%20Street%20Suite%20204%20Santa%20Monica%20CA%2090402">
-                <span class="contact__k">Map</span>
-                <span class="contact__v">Open in Google Maps</span>
-              </a>
-            </div>
-
-            <div class="contact__cta">
-              <a class="btn btn--full" href="tel:+13102542304">Call for a free 15-minute consult</a>
-              <p class="note muted">If you are in crisis or immediate danger, call 911 or go to the nearest emergency room.</p>
-            </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+13102542304">Call (310) 254-2304</a>
+            <a class="btn btn-ghost btn-ghost-invert" href="mailto:hello@example.com">Email</a>
           </div>
 
-          <form class="form" action="#" method="post" novalidate>
-            <h3>Send a message</h3>
+          <div class="contact-details">
+            <p><span class="muted muted-invert">Office:</span> 270 26th Street, Suite 204, Santa Monica, CA 90402</p>
+            <p><span class="muted muted-invert">Format:</span> In-person & Online</p>
+          </div>
 
-            <label class="field">
-              <span>Name</span>
-              <input name="name" type="text" autocomplete="name" placeholder="Your name" required />
-            </label>
-
-            <label class="field">
-              <span>Email</span>
-              <input name="email" type="email" autocomplete="email" placeholder="you@email.com" required />
-            </label>
-
-            <label class="field">
-              <span>What would you like help with?</span>
-              <textarea name="message" rows="5" placeholder="A few lines is enough"></textarea>
-            </label>
-
-            <button class="btn" type="submit">
-              Request the free consultation
-            </button>
-
-            <p class="muted tiny">
-              This form is a demo. Connect it to your preferred form tool or backend.
-            </p>
-          </form>
+          <p class="fine">
+            If you’re in immediate danger or considering self-harm, call 911 or go to the nearest emergency room.
+            For 24/7 support in the U.S., you can call or text 988 (Suicide & Crisis Lifeline).
+          </p>
         </div>
+
+        <form class="form" action="#" method="post" aria-label="Contact form">
+          <div class="form-head">
+            <p class="form-title">Request your free consultation</p>
+            <p class="form-sub">A few details, and I’ll get back to you.</p>
+          </div>
+
+          <label class="field">
+            <span class="label">Name</span>
+            <input class="input" type="text" name="name" autocomplete="name" required />
+          </label>
+
+          <label class="field">
+            <span class="label">Email</span>
+            <input class="input" type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label class="field">
+            <span class="label">Phone (optional)</span>
+            <input class="input" type="tel" name="phone" autocomplete="tel" />
+          </label>
+
+          <label class="field">
+            <span class="label">What would you like help with?</span>
+            <textarea class="input textarea" name="message" rows="5" required placeholder="A sentence or two is enough."></textarea>
+          </label>
+
+          <button class="btn btn-primary btn-full" type="submit" data-submit>
+            Send request
+          </button>
+
+          <p class="form-fine">
+            By sending this form, you understand that email is not a secure method for sharing sensitive information.
+          </p>
+        </form>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div>
-          <div class="footer__name">Emily Caroline Pernoll, MA, LMFT</div>
-          <div class="footer__meta">Marriage & Family Therapist · Santa Monica, CA</div>
-        </div>
-        <div class="footer__links">
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">Emily Caroline Pernoll, MA, LMFT</p>
+        <p class="footer-links">
           <a href="#services">Services</a>
           <a href="#fees">Fees</a>
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
-        </div>
+        </p>
+        <p class="footer-fine">© <span id="year"></span> · Santa Monica, CA</p>
       </div>
     </footer>
   </main>
