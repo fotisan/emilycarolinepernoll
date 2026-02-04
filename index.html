@@ -1,883 +1,486 @@
 <!doctype html>
-<html lang="el">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
 
-  <link rel="preload" href="Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="Inter-italic-var.woff2" as="font" type="font/woff2" crossorigin>
+  <title>Marriage &amp; Family Therapist in Santa Monica, CA | Emily Caroline Pernoll, MA, LMFT</title>
+  <meta name="description" content="Integrative therapy for individuals, couples, and families in Santa Monica. In-person and online. Free 15-minute consultation. Specialties include addiction, infidelity, and grief." />
+  <link rel="canonical" href="https://example.com/" />
 
-  <title>Νικολέτα Πλατή - Ψυχολόγος</title>
-  <meta name="description" content="Ιδιωτικές συνεδρίες στη Ρόδο. Ένας ήρεμος χώρος για να ακουστείτε χωρίς πίεση, με καθαρά βήματα και σεβασμό στον ρυθμό σας." />
-
-  <link rel="icon" href="logo.jpg" type="image/jpeg" />
-  <link rel="apple-touch-icon" href="logo.jpg" />
-
-  <link rel="canonical" href="https://nikoletaplati.gr/" />
-  <meta name="robots" content="index,follow" />
-
+  <meta property="og:title" content="Emily Caroline Pernoll, MA, LMFT | Santa Monica Therapy" />
+  <meta property="og:description" content="A calm, collaborative space for individuals, couples, and families. In-person and online. Free 15-minute consultation." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="el_GR" />
-  <meta property="og:title" content="Ψυχολόγος στη Ρόδο | Νικολέτα Πλατή" />
-  <meta property="og:description" content="Ένας ασφαλής, ήρεμος χώρος για να μιλήσετε όπως είστε. Χωρίς πίεση, με καθαρά βήματα." />
-  <meta property="og:image" content="Hero-section.webp" />
+  <meta property="og:image" content="assets/og-cover.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Psychologist",
-    "name": "Νικολέτα Πλατή",
-    "url": "https://nikoletaplati.gr/",
-    "image": "https://nikoletaplati.gr/Hero-section.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ρόδος",
-      "streetAddress": "Στεφάνου Καζούλη 18",
-      "addressCountry": "GR"
-    }
-  }
-  </script>
-
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preload" href="assets/portrait-emily.webp" as="image" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="hero" id="top">
-    <div class="hero__wrap">
-      <div class="topbar">
-        <div class="brand">
-          <div class="brand__avatar" aria-hidden="true">
-            <img src="logo.jpg" alt="" width="20" height="20" style="border-radius:999px" />
-          </div>
-          <div class="brand__text">
-            <div class="brand__name">Νικολέτα Πλατή</div>
-            <div class="brand__meta">Ψυχολόγος • Ρόδος</div>
-          </div>
-        </div>
+  <a class="skip" href="#main">Skip to content</a>
 
-        <nav class="nav" aria-label="Κύρια πλοήγηση">
-          <a class="pill" href="#services">Υπηρεσίες</a>
-          <a class="pill" href="#work-with">Πώς δουλεύουμε</a>
-          <a class="pill" href="#focus">Τι μπορούμε να δουλέψουμε</a>
-          <a class="pill" href="#about">Σχετικά</a>
-          <a class="pill pill--primary" href="#contact">Επικοινωνία</a>
-        </nav>
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Emily Pernoll</span>
+      </a>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Άνοιγμα μενού">
-          <span class="nav-toggle__lines" aria-hidden="true"></span>
-        </button>
-      </div>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+        <span class="sr">Open menu</span>
+        <span aria-hidden="true" class="burger"></span>
+      </button>
 
-      <div class="mnav" id="mnav" aria-label="Κινητό μενού">
-        <a class="mnav__link" href="#services">Υπηρεσίες</a>
-        <a class="mnav__link" href="#work-with">Πώς δουλεύουμε</a>
-        <a class="mnav__link" href="#focus">Τι μπορούμε να δουλέψουμε</a>
-        <a class="mnav__link" href="#about">Σχετικά</a>
-        <a class="mnav__link mnav__link--primary" href="#contact">Επικοινωνία</a>
-
-        <div class="mnav__social" aria-label="Social media">
-          <a class="social-btn" href="https://www.instagram.com/nikoletaplati_psychologist/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="16.2" cy="7.8" r="0.7" fill="currentColor"/>
-            </svg>
-          </a>
-
-          <a class="social-btn" href="https://www.facebook.com/Kentrologoumathisiskaisimperiforas/" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M14 8h2V6h-2c-1.7 0-3 1.3-3 3v3H9v2h2v6h2v-6h2l1-2h-3V9c0-.6.4-1 1-1z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-            </svg>
-          </a>
-
-          <a class="social-btn" href="https://www.tiktok.com/@nikoleta.plati" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M14 4v9.2a3.8 3.8 0 1 1-2.6-3.6V4H14z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 6.2c1.3 1.6 3.2 2.6 5.4 2.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="divider" role="presentation"></div>
-
-      <div class="hero__grid reveal">
-        <div class="hero__copy">
-          <div class="microline">ΨΥΧΟΛΟΓΟΣ - ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ | ΡΟΔΟΣ</div>
-          <h1 class="hero__title">Βρείτε την άκρη του νήματος με ατομική Ψυχοθεραπεία.</h1>
-          <p class="hero__lead">
-            Κάντε το επόμενο βήμα για την ισορροπία σας, σε ένα περιβάλλον ασφάλειας και επιστημονικής υποστήριξης.
-          </p>
-
-          <div class="hero__ctas">
-            <a class="btn btn--primary" href="#contact">Επικοινωνήστε μαζί μου</a>
-            <a class="btn btn--ghost" href="#services">Πώς μπορώ να βοηθήσω;</a>
-          </div>
-
-          <ul class="trust" aria-label="Σημεία εμπιστοσύνης">
-            <li class="trust__item"><span class="dot dot--warm" aria-hidden="true"></span>Εχεμύθεια</li>
-            <li class="trust__item"><span class="dot dot--mint" aria-hidden="true"></span>Χωρίς πίεση</li>
-            <li class="trust__item"><span class="dot dot--warm" aria-hidden="true"></span>Καθαρά βήματα</li>
-          </ul>
-        </div>
-
-        <div class="hero__media">
-          <div class="media__frame">
-            <img class="media__img" src="Hero-section.webp" alt="Χώρος συνεδριών" width="1200" height="800" loading="eager" />
-          </div>
-
-          <div class="info-card">
-            <div class="info-card__grid">
-              <div class="mini">
-                <div class="mini__label">Ρόδος, Ελλάδα</div>
-                <div class="mini__value">Στεφάνου Καζούλη 18</div>
-              </div>
-              <div class="mini">
-                <div class="mini__label">Διάρκεια συνεδρίας</div>
-                <div class="mini__value">60 λεπτά</div>
-              </div>
-              <div class="mini">
-                <div class="mini__label">Πρώτο βήμα</div>
-                <div class="mini__value">Ένα σύντομο μήνυμα</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <nav id="navMenu" class="nav__menu" aria-label="Primary">
+        <a href="#services">How I can help</a>
+        <a href="#approach">Approach</a>
+        <a href="#fees">Fees</a>
+        <a href="#group">Group</a>
+        <a class="btn btn--soft" href="#contact">Let’s connect</a>
+      </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="services reveal" id="services">
-      <div class="services__wrap">
-        <header class="services__head">
-          <h2 class="services__title">Υπηρεσίες</h2>
-          <p class="services__sub">
-            Ένας καθαρός τρόπος να δείτε τι μπορούμε να δουλέψουμε, με απλά βήματα και σεβασμό στον ρυθμό σας.
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="micro">
+            Marriage &amp; Family Therapist in Santa Monica, CA
+          </p>
+
+          <h1>
+            A steadier nervous system.
+            <span class="h1sub">A clearer way forward.</span>
+          </h1>
+
+          <p class="lead">
+            Therapy for individuals, couples, and families who feel overwhelmed, emotionally flooded, disconnected,
+            or stuck in patterns that keep repeating. You do not need to have everything figured out to begin. :contentReference[oaicite:1]{index=1}
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Book a free 15-minute consultation</a>
+            <a class="btn btn--ghost" href="tel:+13102542304">Call (310) 254-2304</a>
+          </div>
+
+          <div class="chips" aria-label="At a glance">
+            <div class="chip">
+              <span class="chip__k">Availability</span>
+              <span class="chip__v">In person and online</span>
+            </div>
+            <div class="chip">
+              <span class="chip__k">Location</span>
+              <span class="chip__v">Santa Monica, CA 90402</span>
+            </div>
+            <div class="chip">
+              <span class="chip__k">Focus</span>
+              <span class="chip__v">Addiction, infidelity, grief</span>
+            </div>
+          </div>
+
+          <div class="trust">
+            <span class="pill">Verified by Psychology Today :contentReference[oaicite:2]{index=2}</span>
+            <span class="pill">Licensed in CA · LMFT 97635 :contentReference[oaicite:3]{index=3}</span>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Profile card">
+          <figure class="portrait">
+            <img src="assets/portrait-emily.webp" alt="Portrait of Emily Caroline Pernoll" width="840" height="980" />
+          </figure>
+
+          <div class="card">
+            <div class="card__top">
+              <div>
+                <p class="name">Emily Caroline Pernoll</p>
+                <p class="role">MA, LMFT</p>
+              </div>
+              <div class="badge" aria-label="Verified">Verified</div>
+            </div>
+
+            <div class="card__rows">
+              <div class="row">
+                <span class="row__k">Office</span>
+                <span class="row__v">270 26th Street, Suite 204<br/>Santa Monica, CA 90402 :contentReference[oaicite:4]{index=4}</span>
+              </div>
+              <div class="row">
+                <span class="row__k">Clients</span>
+                <span class="row__v">Individuals, couples, families :contentReference[oaicite:5]{index=5}</span>
+              </div>
+              <div class="row">
+                <span class="row__k">Consult</span>
+                <span class="row__v">Free 15-minute call :contentReference[oaicite:6]{index=6}</span>
+              </div>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--primary btn--full" href="#contact">Request a time</a>
+              <a class="btn btn--soft btn--full" href="mailto:hello@example.com?subject=Consultation%20request">Email</a>
+              <!-- Replace hello@example.com with the real email address -->
+              <p class="fine">
+                Prefer text? Include your availability and whether you want in-person or online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>How I can help</h2>
+          <p class="sub">
+            Many people reach out when they feel chronically on edge, stuck, or impacted by past experiences that still show up in the present. :contentReference[oaicite:7]{index=7}
           </p>
         </header>
 
-        <div class="services__pyramid" aria-label="Κάρτες υπηρεσιών">
-          <div class="services__row">
-            <article class="svc is-active">
-              <div class="svc__top">
-                <div class="svc__icon" aria-hidden="true">🧠</div>
-                <div class="svc__num" aria-hidden="true">01</div>
-              </div>
-              <h3 class="svc__title">Ατομική Ψυχοθεραπεία</h3>
-              <p class="svc__desc">Για ενήλικες, εφήβους και παιδιά, με έμφαση στη σχέση και στην ασφάλεια.</p>
+        <div class="grid3">
+          <article class="tile">
+            <h3>Addiction and relapse patterns</h3>
+            <p>
+              Build insight and practical skills so urges feel less in control, and your choices feel more like yours.
+            </p>
+          </article>
 
-              <details class="svc__more">
-                <summary class="svc__summary">
-                  Διαβάστε περισσότερα
-                  <span class="svc__chev" aria-hidden="true"></span>
-                </summary>
-                <ul class="svc__list">
-                  <li>Ενήλικες</li>
-                  <li>Έφηβοι</li>
-                  <li>Παιδιά, παιγνιοθεραπεία και δημιουργικές τεχνικές</li>
-                </ul>
-              </details>
-            </article>
+          <article class="tile">
+            <h3>Infidelity and relationship rupture</h3>
+            <p>
+              A structured, compassionate process to understand what happened and decide what healing looks like next.
+            </p>
+          </article>
 
-            <article class="svc">
-              <div class="svc__top">
-                <div class="svc__icon" aria-hidden="true">🧩</div>
-                <div class="svc__num" aria-hidden="true">02</div>
-              </div>
-              <h3 class="svc__title">Συμβουλευτική Υποστήριτική</h3>
-              <p class="svc__desc">Πρακτική βοήθεια για να ηρεμήσει ο νους, να μπει τάξη στο συναίσθημα και να επιστρέψει η ενέργεια.</p>
-
-              <details class="svc__more">
-                <summary class="svc__summary">
-                  Διαβάστε περισσότερα
-                  <span class="svc__chev" aria-hidden="true"></span>
-                </summary>
-                <ul class="svc__list">
-                  <li>Διαχείριση άγχους και στρες</li>
-                  <li>Αυτοεκτίμηση και αυτοπεποίθηση</li>
-                  <li>Συναισθηματική ρύθμιση</li>
-                  <li>Overthinking και burnout</li>
-                  <li>Διαχείριση αλλαγών ζωής</li>
-                </ul>
-              </details>
-            </article>
-
-            <article class="svc">
-              <div class="svc__top">
-                <div class="svc__icon" aria-hidden="true">💬</div>
-                <div class="svc__num" aria-hidden="true">03</div>
-              </div>
-              <h3 class="svc__title">Θεραπεία Σχέσεων</h3>
-              <p class="svc__desc">Όταν η επικοινωνία δυσκολεύει ή τα μοτίβα επαναλαμβάνονται, χτίζουμε μαζί μια πιο σταθερή βάση.</p>
-
-              <details class="svc__more">
-                <summary class="svc__summary">
-                  Διαβάστε περισσότερα
-                  <span class="svc__chev" aria-hidden="true"></span>
-                </summary>
-                <ul class="svc__list">
-                  <li>Ερωτικές σχέσεις</li>
-                  <li>Οικογενειακές δυσκολίες</li>
-                  <li>Όρια και επικοινωνία</li>
-                  <li>Συναισθηματική εξάρτηση / προσκόλληση</li>
-                </ul>
-              </details>
-            </article>
-          </div>
-
-          <div class="services__row">
-            <article class="svc">
-              <div class="svc__top">
-                <div class="svc__icon" aria-hidden="true">👨‍👩‍👧</div>
-                <div class="svc__num" aria-hidden="true">04</div>
-              </div>
-              <h3 class="svc__title">Γονεϊκή Υποστήριξη</h3>
-              <p class="svc__desc">Καθοδήγηση και στήριξη για γονείς, με πρακτικές στρατηγικές και ανθρώπινο ρυθμό.</p>
-
-              <details class="svc__more">
-                <summary class="svc__summary">
-                  Διαβάστε περισσότερα
-                  <span class="svc__chev" aria-hidden="true"></span>
-                </summary>
-                <ul class="svc__list">
-                  <li>Συμβουλευτική γονέων</li>
-                  <li>Υποστήριξη γονέων παιδιών με ΔΕΠΥ / αυτισμό</li>
-                  <li>Καθοδήγηση σε θέματα ορίων και καθημερινότητας</li>
-                </ul>
-              </details>
-            </article>
-
-            <article class="svc">
-              <div class="svc__top">
-                <div class="svc__icon" aria-hidden="true">🌿</div>
-                <div class="svc__num" aria-hidden="true">05</div>
-              </div>
-              <h3 class="svc__title">Προσωπική Ανάπτυξη</h3>
-              <p class="svc__desc">Για όταν θέλετε να γνωρίσετε καλύτερα τον εαυτό σας και να σταθείτε πιο σταθερά.</p>
-
-              <details class="svc__more">
-                <summary class="svc__summary">
-                  Διαβάστε περισσότερα
-                  <span class="svc__chev" aria-hidden="true"></span>
-                </summary>
-                <ul class="svc__list">
-                  <li>Στόχοι και αποφάσεις</li>
-                  <li>Αυτοφροντίδα και όρια</li>
-                  <li>Μεταβάσεις ζωής</li>
-                </ul>
-              </details>
-            </article>
-
-            <article class="svc">
-              <div class="svc__top">
-                <div class="svc__icon" aria-hidden="true">🤝</div>
-                <div class="svc__num" aria-hidden="true">06</div>
-              </div>
-              <h3 class="svc__title">Ομαδικές Δράσεις</h3>
-              <p class="svc__desc">Διακριτικές, μικρές ομάδες με στόχο σύνδεση, κατανόηση και πρακτική ενδυνάμωση.</p>
-
-              <details class="svc__more">
-                <summary class="svc__summary">
-                  Διαβάστε περισσότερα
-                  <span class="svc__chev" aria-hidden="true"></span>
-                </summary>
-                <ul class="svc__list">
-                  <li>Ομάδες υποστήριξης</li>
-                  <li>Εργαστήρια δεξιοτήτων</li>
-                  <li>Θεματικές συναντήσεις</li>
-                </ul>
-              </details>
-            </article>
-          </div>
+          <article class="tile">
+            <h3>Grief and loss</h3>
+            <p>
+              Support that makes room for the whole story. We work gently, without rushing you past what matters.
+            </p>
+          </article>
         </div>
+
+        <div class="callout">
+          <div class="callout__copy">
+            <h3>Not sure where you fit</h3>
+            <p>
+              You can start with the feeling that something is not working. We will clarify the focus together and take one next step at a time.
+            </p>
+          </div>
+          <a class="btn btn--soft" href="#contact">Start with a free consult</a>
+        </div>
+
+        <details class="details">
+          <summary>Common areas of focus</summary>
+          <div class="details__body">
+            <div class="tags" aria-label="Areas of focus">
+              <span class="tag">Anxiety</span>
+              <span class="tag">Depression</span>
+              <span class="tag">Trauma and PTSD</span>
+              <span class="tag">Stress</span>
+              <span class="tag">Self esteem</span>
+              <span class="tag">Life transitions</span>
+              <span class="tag">Parenting</span>
+              <span class="tag">Family conflict</span>
+              <span class="tag">Substance use</span>
+            </div>
+            <p class="fine">
+              These topics are listed because they are commonly referenced in her public profile. :contentReference[oaicite:8]{index=8}
+            </p>
+          </div>
+        </details>
       </div>
     </section>
 
-    <section class="work-with reveal" id="work-with">
-      <div class="work-with__wrap">
-        <div class="soft-banner">
-          <div>
-            <h3 class="soft-banner__title">Δεν ξέρετε από πού να ξεκινήσετε; Είναι φυσιολογικό.</h3>
-            <p class="soft-banner__sub">
-              Μπορούμε να ξεκινήσουμε από αυτό που σας δυσκολεύει περισσότερο σήμερα και να χτίσουμε από εκεί.
-            </p>
-          </div>
-          <div class="soft-banner__actions">
-            <a class="btn btn--primary" href="#contact">Κλείστε ραντεβού</a>
-          </div>
-        </div>
-
-        <header class="work-with__head">
-          <h2 class="work-with__title">Πώς δουλεύουμε μαζί</h2>
-          <p class="work-with__sub">
-            Ένα πλαίσιο που κρατά ασφάλεια, απλότητα και σταθερά βήματα, χωρίς να πιέζει.
+    <!-- APPROACH -->
+    <section id="approach" class="section section--alt">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Integrative therapy, grounded in your real life</h2>
+          <p class="sub">
+            Work that may include somatic experience, relational style, cognitive processes, mindfulness, and skill development. :contentReference[oaicite:9]{index=9}
           </p>
         </header>
 
-        <div class="modes" aria-label="Τρόποι συνεδρίας">
-          <div class="mode">
-            <div class="mode__icon" aria-hidden="true">🏠</div>
-            <div>
-              <h3 class="mode__title">Δια ζώσης</h3>
-              <p class="mode__text">Στη Ρόδο, σε ήρεμο και διακριτικό χώρο.</p>
+        <div class="grid2">
+          <article class="panel">
+            <h3>What sessions can feel like</h3>
+            <p>
+              Collaborative and engaged. We look for the blindspots that keep shaping your patterns, then practice new options that you can actually use. :contentReference[oaicite:10]{index=10}
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>Modalities that may be used</h3>
+            <div class="tags">
+              <span class="tag">CBT</span>
+              <span class="tag">Gestalt</span>
+              <span class="tag">Humanistic</span>
+              <span class="tag">Jungian</span>
+              <span class="tag">Psychodynamic</span>
+              <span class="tag">Trauma focused</span>
             </div>
-          </div>
-          <div class="mode">
-            <div class="mode__icon" aria-hidden="true">💻</div>
-            <div>
-              <h3 class="mode__title">Online</h3>
-              <p class="mode__text">Με σταθερότητα, ιδιωτικότητα και καθαρή δομή.</p>
-            </div>
-          </div>
-          <div class="mode">
-            <div class="mode__icon" aria-hidden="true">🗓️</div>
-            <div>
-              <h3 class="mode__title">Ρυθμός</h3>
-              <p class="mode__text">Συμφωνούμε μαζί το πλάνο που σας ταιριάζει.</p>
-            </div>
-          </div>
+            <p class="fine">Listed as therapy types in her public profile. :contentReference[oaicite:11]{index=11}</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="focus reveal" id="focus">
-      <div class="focus__wrap">
-        <header class="focus__head">
-          <h2 class="focus__title">Τι μπορούμε να δουλέψουμε μαζί</h2>
-          <p class="focus__sub">Αν κάτι από τα παρακάτω σας ακούγεται οικείο, είναι ένα καλό σημείο εκκίνησης.</p>
+    <!-- FEES -->
+    <section id="fees" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Fees and payment</h2>
+          <p class="sub">Clear expectations, upfront.</p>
         </header>
 
-        <div class="focus__grid">
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">Άγχος, στρες και κρίσεις πανικού</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Σωματικά συμπτώματα, ένταση, δυσκολία ύπνου</li>
-                <li>Ανησυχία που δεν “κλείνει”</li>
-                <li>Πρακτικά εργαλεία γείωσης και ρύθμισης</li>
-              </ul>
+        <div class="grid2">
+          <article class="panel">
+            <h3>Session fees</h3>
+            <ul class="list">
+              <li><strong>Individual sessions</strong> $250 :contentReference[oaicite:12]{index=12}</li>
+              <li><strong>Couple sessions</strong> $325 :contentReference[oaicite:13]{index=13}</li>
+              <li><strong>Sliding scale</strong> Apply if you may be eligible :contentReference[oaicite:14]{index=14}</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h3>Payment and insurance</h3>
+            <ul class="list">
+              <li>Payment methods include American Express, cash, check, Mastercard, Visa :contentReference[oaicite:15]{index=15}</li>
+              <li>Insurance: out of network :contentReference[oaicite:16]{index=16}</li>
+            </ul>
+            <p class="fine">
+              If you plan to use out of network benefits, ask what documentation you may need.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP -->
+    <section id="group" class="section section--alt">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Group support</h2>
+          <p class="sub">A warm, supportive space for grief and loss.</p>
+        </header>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3>Grief and Loss Recovery</h3>
+            <p>
+              A safe and comforting environment to process loss and feel connected with others going through similar emotions. :contentReference[oaicite:17]{index=17}
+            </p>
+            <ul class="list">
+              <li><strong>Expertise</strong> Grief :contentReference[oaicite:18]{index=18}</li>
+              <li><strong>Session cost</strong> Listed as $70 to $80 :contentReference[oaicite:19]{index=19}</li>
+              <li><strong>Location</strong> Santa Monica, CA 90402 :contentReference[oaicite:20]{index=20}</li>
+            </ul>
+            <p class="fine">Group pricing can change, confirm when you reach out.</p>
+          </article>
+
+          <article class="panel">
+            <h3>Who it is for</h3>
+            <p>
+              If your grief feels isolating, confusing, or hard to carry alone, group can offer steadiness and a sense of shared humanity.
+            </p>
+            <a class="btn btn--soft" href="#contact">Ask about the next opening</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>FAQ</h2>
+          <p class="sub">Short answers to help you feel confident taking the first step.</p>
+        </header>
+
+        <div class="faq">
+          <details class="qa">
+            <summary>Do you offer therapy online and in person in Santa Monica</summary>
+            <div class="qa__a">
+              Yes. The practice is listed as available both in person and online. :contentReference[oaicite:21]{index=21}
             </div>
           </details>
 
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">Θλίψη, χαμηλή διάθεση και burnout</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Κούραση, απάθεια, έλλειψη κινήτρου</li>
-                <li>Πίεση, υπεραπόδοση, τελειομανία</li>
-                <li>Επαναφορά ισορροπίας ζωής και δουλειάς</li>
-              </ul>
+          <details class="qa">
+            <summary>Is there a free 15 minute consultation</summary>
+            <div class="qa__a">
+              Yes. You can call for a free 15 minute consultation at (310) 254 2304. :contentReference[oaicite:22]{index=22}
             </div>
           </details>
 
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">Συναισθηματική ρύθμιση και έντονα συναισθήματα</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Διαχείριση θυμού ή εκρήξεων</li>
-                <li>Όταν “πλημμυρίζετε” και μετά αδειάζετε</li>
-                <li>Αυτοφροντίδα και σταθερότητα στην καθημερινότητα</li>
-              </ul>
+          <details class="qa">
+            <summary>How much are sessions</summary>
+            <div class="qa__a">
+              Individual sessions are listed at $250 and couple sessions at $325. :contentReference[oaicite:23]{index=23}
             </div>
           </details>
 
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">Αυτοεκτίμηση, ενοχές και ο εσωτερικός διάλογος</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Ντροπή, ενοχές, αυστηρή αυτοκριτική</li>
-                <li>Overthinking και αρνητικές σκέψεις</li>
-                <li>Ανάγκες, όρια και φροντίδα του εαυτού</li>
-              </ul>
+          <details class="qa">
+            <summary>Do you take insurance</summary>
+            <div class="qa__a">
+              Insurance is listed as out of network. Many clients use out of network benefits if they have them. :contentReference[oaicite:24]{index=24}
             </div>
           </details>
 
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">Σχέσεις, μοτίβα και όρια</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Επικοινωνία, συγκρούσεις, “δίνω περισσότερα απ’ όσα παίρνω”</li>
-                <li>Προσκολλήσεις, φόβος εγκατάλειψης</li>
-                <li>Συναισθηματική εξάρτηση και ασφαλέστερη σύνδεση</li>
-              </ul>
+          <details class="qa">
+            <summary>What issues do you commonly work with</summary>
+            <div class="qa__a">
+              Top specialties include addiction, infidelity, and grief. The profile also lists anxiety, trauma and PTSD, depression, stress, and more. :contentReference[oaicite:25]{index=25}
             </div>
           </details>
 
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">Απώλεια, πένθος, μεταβάσεις και τραύμα</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Χωρισμός, αλλαγές ζωής, μετακόμιση, νέοι ρόλοι</li>
-                <li>Πένθος και απώλεια</li>
-                <li>Τραυματικές εμπειρίες, με ρυθμό που αντέχετε</li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">Αποφάσεις, κατεύθυνση και επαγγελματική πορεία</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Λήψη αποφάσεων και στόχοι ζωής</li>
-                <li>Επαγγελματικός προσανατολισμός και αλλαγές καριέρας</li>
-                <li>Αναβλητικότητα και μικρά βήματα δράσης</li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="acc">
-            <summary class="acc__summary">
-              <span class="acc__title">ΔΕΠΥ, αυτιστικό φάσμα και οικογενειακή στήριξη</span>
-              <span class="acc__icon" aria-hidden="true"></span>
-            </summary>
-            <div class="acc__content">
-              <ul class="acc__list">
-                <li>Κατανόηση και στρατηγικές στην καθημερινότητα</li>
-                <li>Ψυχοεκπαίδευση και πρακτικά εργαλεία</li>
-                <li>Υποστήριξη γονεϊκότητας όταν υπάρχουν δυσκολίες συμπεριφοράς</li>
-              </ul>
+          <details class="qa">
+            <summary>What therapy approaches might be used</summary>
+            <div class="qa__a">
+              The public profile lists CBT, Gestalt, humanistic, Jungian, psychodynamic, and trauma focused approaches, within an integrative style. :contentReference[oaicite:26]{index=26}
             </div>
           </details>
         </div>
       </div>
     </section>
 
-    <section class="about reveal" id="about">
-      <div class="about__wrap">
-        <div class="about__grid">
-          <div class="about__copy">
-            <h2 class="about__title">Σχετικά</h2>
-
-            <p class="about__text">
-              Μερικές φορές δεν είναι ένα «μεγάλο» γεγονός που μας φέρνει εδώ. Είναι η συσσώρευση. Η κούραση που μένει,
-              το σώμα που σφίγγει, οι σκέψεις που γυρίζουν την ίδια διαδρομή.
-            </p>
-
-            <p class="about__text">
-              Η θεραπεία, για μένα, είναι ένας ασφαλής τόπος. Ένας χώρος όπου μπορείτε να ακουστείτε με σεβασμό,
-              χωρίς να χρειάζεται να αποδείξετε τίποτα. Δουλεύουμε με αυτό που είναι αληθινό για εσάς,
-              και το κάνουμε με τρόπο που να μπορεί να «ζήσει» μέσα στην καθημερινότητα.
-            </p>
-
-            <p class="about__text">
-              Για τους γονείς, το ζητούμενο δεν είναι η τελειότητα. Είναι η στήριξη, η κατανόηση,
-              και μια σταθερή συνεργασία ώστε το σπίτι να γίνει πιο ήρεμο, πιο προβλέψιμο, πιο ανθρώπινο.
-            </p>
-
-            <div class="about__cta">
-              <a class="btn btn--primary" href="#contact">Κάντε το πρώτο βήμα</a>
-            </div>
-          </div>
-
-          <div class="about__media">
-            <figure class="portrait">
-              <img class="portrait__img" src="about.webp" alt="Πορτρέτο" width="900" height="1100" loading="lazy" />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="timeline reveal" id="timeline">
-      <div class="timeline__wrap">
-        <header class="timeline__head">
-          <h2 class="timeline__title">Σπουδές και εξειδίκευση</h2>
-          <p class="timeline__sub">
-            Μια σύντομη, καθαρή εικόνα της πορείας μου, με βάση την εκπαίδευση και τις εξειδικεύσεις.
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="wrap">
+        <header class="section__head">
+          <h2>Let’s connect</h2>
+          <p class="sub">
+            A short message is enough. Share what you are looking for and your availability. :contentReference[oaicite:27]{index=27}
           </p>
         </header>
 
-        <ol class="timeline__list">
-          <li class="tl">
-            <span class="tl__dot" aria-hidden="true"></span>
-            <div class="tl__card">
-              <h3 class="tl__title">BSc (Hons) Psychology</h3>
-              <div class="tl__meta">Canterbury Christ Church University</div>
-              <p class="tl__text">
-                Αποφοίτησα από το Τμήμα Ψυχολογίας, με έμφαση στη θεωρητική βάση και στην κατανόηση του ανθρώπινου νου και της συμπεριφοράς.
+        <div class="grid2">
+          <article class="panel panel--form">
+            <form id="contactForm" class="form" autocomplete="on" novalidate>
+              <label class="field">
+                <span class="field__l">Your name</span>
+                <input class="input" name="name" type="text" required minlength="2" placeholder="Full name" />
+              </label>
+
+              <label class="field">
+                <span class="field__l">Email</span>
+                <input class="input" name="email" type="email" required placeholder="you@example.com" />
+              </label>
+
+              <label class="field">
+                <span class="field__l">Phone (optional)</span>
+                <input class="input" name="phone" type="tel" placeholder="(___) ___ ____" />
+              </label>
+
+              <label class="field">
+                <span class="field__l">What would you like help with</span>
+                <textarea class="input" name="message" rows="5" required placeholder="A few lines is perfect"></textarea>
+              </label>
+
+              <label class="field field--inline">
+                <input type="checkbox" name="online" />
+                <span>I am open to online sessions</span>
+              </label>
+
+              <button class="btn btn--primary btn--full" type="submit">Send message</button>
+
+              <p class="fine">
+                This form is a front end demo. Connect it to your email service, or replace it with a mailto link.
+              </p>
+
+              <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+            </form>
+          </article>
+
+          <aside class="panel">
+            <h3>Contact details</h3>
+            <div class="contact__rows">
+              <div class="row">
+                <span class="row__k">Phone</span>
+                <span class="row__v"><a href="tel:+13102542304">(310) 254-2304</a> :contentReference[oaicite:28]{index=28}</span>
+              </div>
+              <div class="row">
+                <span class="row__k">Address</span>
+                <span class="row__v">270 26th Street, Suite 204<br/>Santa Monica, CA 90402 :contentReference[oaicite:29]{index=29}</span>
+              </div>
+              <div class="row">
+                <span class="row__k">Availability</span>
+                <span class="row__v">In person and online :contentReference[oaicite:30]{index=30}</span>
+              </div>
+            </div>
+
+            <div class="map">
+              <button class="btn btn--soft btn--full" id="loadMap" type="button">
+                View map
+              </button>
+              <div class="map__frame" id="mapFrame" hidden>
+                <!-- Loaded on demand to protect performance -->
+              </div>
+              <p class="fine">
+                Map loads only when clicked. Better for speed scores.
               </p>
             </div>
-          </li>
 
-          <li class="tl">
-            <span class="tl__dot tl__dot--mint" aria-hidden="true"></span>
-            <div class="tl__card">
-              <h3 class="tl__title">Εκπαιδευτική Ψυχολογία και Πρακτικές Εφαρμογές</h3>
-              <div class="tl__meta">Ανοιχτό Ίδρυμα Εκπαίδευσης</div>
-              <p class="tl__text">
-                Εξειδίκευση με πρακτικό προσανατολισμό, σε εργαλεία και εφαρμογές που υποστηρίζουν την ανάπτυξη και τη μάθηση.
+            <div class="note">
+              <p class="note__t">A small note on fit</p>
+              <p class="note__p">
+                If you are unsure what kind of support you need, that is okay. The first step is simply starting the conversation.
               </p>
             </div>
-          </li>
-
-          <li class="tl">
-            <span class="tl__dot" aria-hidden="true"></span>
-            <div class="tl__card">
-              <h3 class="tl__title">Συμβουλευτική Ψυχολογία</h3>
-              <div class="tl__meta">Pearson University</div>
-              <p class="tl__text">
-                Εκπαίδευση στη συμβουλευτική προσέγγιση, με έμφαση στη σχέση, στην ενσυναίσθηση και στη δομημένη υποστήριξη.
-              </p>
-            </div>
-          </li>
-
-          <li class="tl">
-            <span class="tl__dot tl__dot--mint" aria-hidden="true"></span>
-            <div class="tl__card">
-              <h3 class="tl__title">Αφηγηματική Ψυχοθεραπεία</h3>
-              <div class="tl__meta">Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών</div>
-              <p class="tl__text">
-                Εξειδίκευση στις αφηγηματικές, διαλογικές και σχεσιακές προσεγγίσεις στη μετανεωτερικότητα.
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="faq reveal" id="faq">
-      <div class="faq__wrap">
-        <header class="faq__head">
-          <h2 class="faq__title">FAQ</h2>
-          <p class="faq__sub">Μικρές απαντήσεις, για να νιώθετε πιο σίγουροι πριν κάνετε το πρώτο βήμα.</p>
-        </header>
-
-        <div class="faq__grid">
-          <div class="faq__left" aria-label="Συχνές ερωτήσεις">
-            <details class="faq-item">
-              <summary class="faq-item__q">1. Πόση είναι η διάρκεια των συνεδριών;</summary>
-              <div class="faq-item__a">
-                Η τυπική διάρκεια είναι 60 λεπτά. Αυτός ο χρόνος είναι αποκλειστικά δικός σας, για να μιλήσουμε χωρίς βιασύνη και να επεξεργαστούμε όσα σας απασχολούν.
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-item__q">2. Πώς ξέρω τι είδους υπηρεσία χρειάζομαι;</summary>
-              <div class="faq-item__a">
-                Δεν χρειάζεται να το γνωρίζετε από πριν. Στην πρώτη μας επικοινωνία ή στην αρχική συνεδρία, θα περιγράψετε τι σας δυσκολεύει και θα σας καθοδηγήσω στο θεραπευτικό πλάνο που ταιριάζει καλύτερα στη δική σας περίπτωση.
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-item__q">3. Είναι οι συνεδρίες εμπιστευτικές;</summary>
-              <div class="faq-item__a">
-                Απόλυτα. Το θεραπευτικό απόρρητο προστατεύεται από τον κώδικα δεοντολογίας των ψυχολόγων. Οτιδήποτε μοιράζεστε παραμένει αυστηρά μεταξύ μας, δημιουργώντας έναν απόλυτα ασφαλή χώρο εμπιστοσύνης.
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-item__q">4. Πρέπει να δεσμευτώ σε συγκεκριμένο αριθμό συνεδριών;</summary>
-              <div class="faq-item__a">
-                Όχι, δεν υπάρχει προκαθορισμένη δέσμευση. Η συχνότητα και ο αριθμός των συναντήσεων εξαρτώνται από τους στόχους σας και τον δικό σας ρυθμό. Το συζητάμε μαζί και το αξιολογούμε τακτικά.
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-item__q">5. Πού βρίσκεται ο χώρος και ποιες περιοχές εξυπηρετείτε;</summary>
-              <div class="faq-item__a">
-                Ο χώρος βρίσκεται στη Ρόδο, στην οδό Στεφάνου Καζούλη 18. Παράλληλα, υπάρχει η δυνατότητα για online συνεδρίες, προσφέροντας την ίδια ποιότητα υποστήριξης όπου κι αν βρίσκεστε.
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-item__q">6. Τι γίνεται αν δεν έχω ξαναπάει σε ψυχολόγο;</summary>
-              <div class="faq-item__a">
-                Είναι απόλυτα φυσιολογικό να νιώθετε αμηχανία ή άγχος στην αρχή. Η διαδικασία είναι πολύ πιο απλή και ανθρώπινη απ' όσο φαντάζεστε. Δεν χρειάζεται να έχετε προετοιμάσει τι θα πείτε· θα βρούμε την άκρη μαζί.
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-item__q">7. Πώς μπορώ να κλείσω ένα ραντεβού;</summary>
-              <div class="faq-item__a">
-                Μπορείτε να στείλετε ένα σύντομο μήνυμα μέσω της φόρμας επικοινωνίας, ένα email ή να καλέσετε στο τηλέφωνο. Θα σας απαντήσω το συντομότερο δυνατό για να βρούμε μια ώρα που σας εξυπηρετεί.
-              </div>
-            </details>
-          </div>
-
-          <aside class="faq__media" aria-label="Εικόνα χώρου">
-            <img src="faq.webp" alt="Χώρος συνεδριών" width="1200" height="1400" loading="lazy" />
           </aside>
         </div>
       </div>
     </section>
-
-    <section class="contact reveal" id="contact">
-      <div class="contact__wrap">
-        <header class="contact__head">
-          <h2 class="contact__title">Επικοινωνία</h2>
-          <p class="contact__sub">Αν θέλετε, γράψτε μου λίγα λόγια. Θα σας απαντήσω με ηρεμία και διακριτικότητα.</p>
-        </header>
-
-        <div class="contact-card">
-          <div class="contact-card__grid">
-            
-            <div class="contact-card__left">
-              <div class="contact-card__media">
-                <img src="contact.webp" alt="Ρόδος" width="1200" height="1400" loading="lazy" />
-              </div>
-              
-              <div class="contact-card__info">
-                <div class="ci-row">
-                  <div class="ci-k">Κινητό</div>
-                  <div class="ci-v"><a class="ci-link" href="tel:+306949626413">+30 694 962 6413</a></div>
-                </div>
-                <div class="ci-row">
-                  <div class="ci-k">Email</div>
-                  <div class="ci-v"><a class="ci-link" href="mailto:nicoletaplath@gmail.com">nicoletaplath@gmail.com</a></div>
-                </div>
-                <div class="ci-row">
-                  <div class="ci-k">Τοποθεσία</div>
-                  <div class="ci-v">Στεφάνου Καζούλη 18, Ρόδος</div>
-                </div>
-                <div class="ci-row">
-                  <div class="ci-k">Social</div>
-                  <div class="ci-social">
-                    <a class="social-btn" href="https://www.instagram.com/nikoletaplati_psychologist/" target="_blank" rel="noopener" aria-label="Instagram">
-                      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                        <rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
-                        <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.2"/>
-                        <circle cx="16.2" cy="7.8" r="0.7" fill="currentColor"/>
-                      </svg>
-                    </a>
-                    <a class="social-btn" href="https://www.facebook.com/Kentrologoumathisiskaisimperiforas/" target="_blank" rel="noopener" aria-label="Facebook">
-                      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                        <path d="M14 8h2V6h-2c-1.7 0-3 1.3-3 3v3H9v2h2v6h2v-6h2l1-2h-3V9c0-.6.4-1 1-1z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-                      </svg>
-                    </a>
-                    <a class="social-btn" href="https://www.tiktok.com/@nikoleta.plati" target="_blank" rel="noopener" aria-label="TikTok">
-                      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                        <path d="M14 4v9.2a3.8 3.8 0 1 1-2.6-3.6V4H14z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M14 6.2c1.3 1.6 3.2 2.6 5.4 2.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <form class="contact-card__form" action="#" method="post">
-              <div class="field">
-                <label class="field__label" for="name">Το όνομά σας</label>
-                <input class="field__input" id="name" name="name" type="text" autocomplete="name" required />
-              </div>
-
-              <div class="field">
-                <label class="field__label" for="phone">Τηλέφωνο</label>
-                <input class="field__input" id="phone" name="phone" type="tel" autocomplete="tel" required />
-              </div>
-
-              <div class="field">
-                <label class="field__label" for="message">Μήνυμα</label>
-                <textarea class="field__input field__textarea" id="message" name="message" required></textarea>
-              </div>
-
-              <div class="contact-form__actions">
-                <button class="btn btn--primary" type="submit">Αποστολή</button>
-                <a class="btn btn--outline" href="tel:+306949626413">Κλήση</a>
-              </div>
-
-              <p class="contact-form__note">
-                Με την αποστολή, συμφωνείτε να επικοινωνήσω μαζί σας για τον σκοπό του ραντεβού.
-              </p>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="map reveal" style="padding: 0 16px 40px;">
-      <div style="max-width: 980px; margin: 0 auto; border-radius: 26px; overflow: hidden; border: 1px solid rgba(31, 29, 24, 0.10); box-shadow: 0 18px 50px rgba(31, 29, 26, 0.10);">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.286822165037!2d28.2217641!3d36.4385933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1490333792c30089%3A0xc34a81577908b8b3!2zzqPPhM61z4bOrM69zr_PhSDOms6xzrbOv8-NzrvOtyAxOCwgzqHPjM60zr_PgiA4NTEgMzE!5e0!3m2!1sel!2sgr!4v1709400000000!5m2!1sel!2sgr" 
-          width="100%" 
-          height="450" 
-          style="border:0; display: block;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer__wrap">
-      <div class="site-footer__brand">
-        <div class="site-footer__name">Νικολέτα Πλατή</div>
-        <div class="site-footer__meta">
-          Ιδιωτικές συνεδρίες στη Ρόδο • Ένας ήρεμος χώρος για να ακουστείτε χωρίς πίεση, με καθαρά βήματα.
-        </div>
-
-        <div class="site-footer__social" aria-label="Social media">
-          <a class="social-btn" href="https://www.instagram.com/nikoletaplati_psychologist/" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.2"/>
-              <circle cx="16.2" cy="7.8" r="0.7" fill="currentColor"/>
-            </svg>
-          </a>
-
-          <a class="social-btn" href="https://www.facebook.com/Kentrologoumathisiskaisimperiforas/" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M14 8h2V6h-2c-1.7 0-3 1.3-3 3v3H9v2h2v6h2v-6h2l1-2h-3V9c0-.6.4-1 1-1z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-            </svg>
-          </a>
-
-          <a class="social-btn" href="https://www.tiktok.com/@nikoleta.plati" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M14 4v9.2a3.8 3.8 0 1 1-2.6-3.6V4H14z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 6.2c1.3 1.6 3.2 2.6 5.4 2.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            </svg>
-          </a>
-        </div>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <p class="footer__brand">Emily Caroline Pernoll, MA, LMFT</p>
+        <p class="footer__fine">Santa Monica, California · In person and online :contentReference[oaicite:31]{index=31}</p>
       </div>
 
-      <div class="site-footer__cols">
-        <div class="site-footer__col">
-          <div class="site-footer__k">Πλοήγηση</div>
-          <a class="site-footer__link" href="#services">Υπηρεσίες</a>
-          <a class="site-footer__link" href="#focus">Τι δουλεύουμε</a>
-          <a class="site-footer__link" href="#contact">Επικοινωνία</a>
-        </div>
-
-        <div class="site-footer__col">
-          <div class="site-footer__k">Νομικά</div>
-          <a class="site-footer__legal" href="#">Πολιτική απορρήτου</a>
-          <a class="site-footer__legal" href="#">Όροι χρήσης</a>
-        </div>
-
-        <div class="site-footer__col">
-          <div class="site-footer__k">Επικοινωνία</div>
-          <div class="site-footer__text">
-            <a class="site-footer__link" href="mailto:nicoletaplath@gmail.com">nicoletaplath@gmail.com</a><br />
-            <a class="site-footer__link" href="tel:+306949626413">+30 694 962 6413</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-footer__bottom">
-        <div class="site-footer__copy">© <span id="y"></span> Νικολέτα Πλατή</div>
-        <a class="site-footer__credit" href="https://evidastudio.com/" target="_blank" rel="noopener">
-          Digital Experience by <span>Evida Studio</span>
-        </a>
+      <div class="footer__links" aria-label="Footer links">
+        <a href="#services">Services</a>
+        <a href="#fees">Fees</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
 
-  <button class="to-top" type="button" aria-label="Επιστροφή στην κορυφή">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path d="M12 5l-6 6m6-6l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M12 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    </svg>
-  </button>
-
-  <script>
-    // Footer year
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    // Reveal on scroll logic
-    function reveal() {
-      var reveals = document.querySelectorAll(".reveal");
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 100;
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
-        }
-      }
-    }
-    window.addEventListener("scroll", reveal);
-    // Initial call for elements above the fold
-    reveal();
-
-    // Mobile nav
-    const toggle = document.querySelector(".nav-toggle");
-    const mnav = document.getElementById("mnav");
-
-    if (toggle && mnav) {
-      toggle.addEventListener("click", () => {
-        const open = toggle.getAttribute("aria-expanded") === "true";
-        toggle.setAttribute("aria-expanded", String(!open));
-        mnav.classList.toggle("is-open", !open);
-        document.body.classList.toggle("no-scroll", !open);
-      });
-
-      mnav.querySelectorAll("a").forEach((a) => {
-        a.addEventListener("click", () => {
-          toggle.setAttribute("aria-expanded", "false");
-          mnav.classList.remove("is-open");
-          document.body.classList.remove("no-scroll");
-        });
-      });
-    }
-
-    // Services active card (mobile)
-    const svc = Array.from(document.querySelectorAll(".svc"));
-    const scroller = document.querySelector(".services__pyramid");
-    if (svc.length && scroller) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              svc.forEach((c) => c.classList.remove("is-active"));
-              e.target.classList.add("is-active");
-            }
-          });
-        },
-        { root: scroller, threshold: 0.6 }
-      );
-      svc.forEach((c) => io.observe(c));
-    }
-
-    // Scroll-to-top button
-    const toTop = document.querySelector(".to-top");
-    let ticking = false;
-
-    function onScroll() {
-      if (!toTop) return;
-      const y = window.scrollY || document.documentElement.scrollTop;
-      if (y > 320) toTop.classList.add("is-show");
-      else toTop.classList.remove("is-show");
-      ticking = false;
-    }
-
-    window.addEventListener("scroll", () => {
-      if (!ticking) {
-        ticking = true;
-        window.requestAnimationFrame(onScroll);
-      }
-    }, { passive: true });
-
-    if (toTop) {
-      toTop.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    }
+  <!-- JSON-LD: Therapist / Local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness","MedicalBusiness"],
+    "name": "Emily Caroline Pernoll, MA, LMFT",
+    "description": "Integrative therapy for individuals, couples, and families. In-person and online in Santa Monica, CA.",
+    "telephone": "+1-310-254-2304",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "270 26th Street, Suite 204",
+      "addressLocality": "Santa Monica",
+      "addressRegion": "CA",
+      "postalCode": "90402",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Santa Monica, CA","Los Angeles, CA","Venice, CA"],
+    "priceRange": "$$",
+    "image": "https://example.com/assets/portrait-emily.webp",
+    "url": "https://example.com/",
+    "sameAs": [
+      "https://www.psychologytoday.com/us/therapists/emily-caroline-pernoll-santa-monica-ca/320026"
+    ]
+  }
   </script>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
