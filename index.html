@@ -42,8 +42,7 @@
   </script>
 </head>
 
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+<body id="top">
 
   <header class="site-header" data-header>
     <div class="container header-inner">
@@ -56,12 +55,11 @@
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="navMenu">
-          <span class="sr-only">Open menu</span>
-          <span class="nav-lines" aria-hidden="true"></span>
+        <button class="nav-toggle" type="button" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <div class="nav-lines"></div>
         </button>
 
-        <div class="nav-menu" id="navMenu" data-nav-menu>
+        <div class="nav-menu" id="navMenu">
           <a class="nav-link" href="#specialties">Specialties</a>
           <a class="nav-link" href="#about">About Me</a>
           <a class="nav-link" href="#fees">Fees</a>
@@ -222,6 +220,15 @@
       </div>
     </section>
 
+    <section class="section visual-break">
+      <div class="container">
+        <div class="image-grid">
+           <img src="therapy-space-1.webp" alt="Calming therapy office interior" class="visual-img" loading="lazy">
+          <img src="therapy-space-2.webp" alt="Details of the therapy room" class="visual-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="fees" aria-label="Fees">
       <div class="container">
         <div class="section-head">
@@ -377,6 +384,13 @@
         </p>
       </div>
     </footer>
+
+    <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </a>
+
   </main>
 
   <script src="script.js" defer></script>
