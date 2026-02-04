@@ -142,7 +142,7 @@ a { color: inherit; text-decoration: none; transition: 0.2s; }
   pointer-events: none;
   transform: translateY(10px);
   transition: all 0.3s ease;
-  z-index: 900; /* High z-index to stay on top */
+  z-index: 2000; /* Very high z-index */
 }
 .back-to-top:hover {
   background: var(--primary-dark);
